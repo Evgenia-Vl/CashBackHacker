@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 public class CashBackHackerTest {
 
     CashBackHacker service = new CashBackHacker();
+
     @org.junit.Test
     public void serviceWorksWhenAmountBetweenZeroAndOneThousand() {
         int amount = 400;
