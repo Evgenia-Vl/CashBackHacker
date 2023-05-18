@@ -18,7 +18,7 @@ public class CashBackHackerTest {
 
     @org.testng.annotations.Test
     public void serviceWorksWhenAmountOverOneThousand() {
-        int amount = 1600;
+        int amount = 1_600;
         org.testng.Assert.assertEquals(service.remain(amount), 400);
     }
 
@@ -30,13 +30,13 @@ public class CashBackHackerTest {
 
     @org.testng.annotations.Test
     public void serviceWorksWhenAmountOverOneThousandInOne() {
-        int amount = 1001;
+        int amount = 1_001;
         org.testng.Assert.assertEquals(service.remain(amount), 999);
     }
 
     @org.testng.annotations.Test
     public void serviceWorksWhenAmountEqualsOneThousand() {
-        int amount = 1000;
+        int amount = 1_000;
         org.testng.Assert.assertEquals(service.remain(amount), 0);
     }
 
